@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="110dp"
+   android:paddingLeft="5dp"
+   android:paddingRight="5dp"
+   android:paddingBottom="8dp"
+   android:gravity="center_horizontal"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:orientation="vertical">
+
+ <android.support.v7.widget.CardView
+      android:layout_height="96dp"
+      android:layout_width="wrap_content"
+      android:foreground="?android:attr/selectableItemBackground"
+      app:cardCornerRadius="5dp"
+      app:cardElevation="3dp"
+      app:cardPreventCornerOverlap="true"
+
+    >
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/guoqiao_item_text"
+            android:layout_width="0dp"
+            app:layout_widthPercent="75%w"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/ceshi"
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="4%w"
+            app:layout_paddingLeftPercent="2%w"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            />
+        <ImageView
+            android:id="@+id/guoqiao_item_image"
+            android:layout_width="0dp"
+            app:layout_widthPercent="22%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="22%w"
+            app:layout_marginLeftPercent="1%w"
+            android:scaleType="center"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/roundback"/>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+
+
+</android.support.v7.widget.CardView>
+
+
+</LinearLayout>

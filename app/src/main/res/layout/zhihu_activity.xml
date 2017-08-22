@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/zhihu_ativity_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorTheme"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/zhihu_yuedu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悦读"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="18sp"/>
+        <ImageView
+            android:id="@+id/zhihu_activity_more"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more"/>
+
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/zhihu_actiity_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

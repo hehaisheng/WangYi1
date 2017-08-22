@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="8dp"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="true"
+        >
+
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTabBg"
+            android:paddingBottom="8dp">
+            <ImageView
+                android:id="@+id/friend_touxiang"
+                android:layout_width="0dp"
+                app:layout_widthPercent="12%w"
+                android:layout_height="0dp"
+                app:layout_heightPercent="12%w"
+                app:layout_marginLeftPercent="2%w"
+                app:layout_marginTopPercent="2%w"
+                android:scaleType="center"
+                android:src="@drawable/roundback"/>
+            <TextView
+                android:id="@+id/friend_user_name"
+                android:layout_width="0dp"
+                app:layout_widthPercent="75%w"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="好音用户"
+                android:textColor="@color/text_common"
+                app:layout_textSizePercent="4%w"
+                app:layout_marginLeftPercent="2%w"
+                android:layout_toRightOf="@+id/friend_touxiang"
+                android:layout_alignTop="@+id/friend_touxiang"
+
+                />
+            <TextView
+                android:id="@+id/friend_user_xinqing"
+                android:layout_width="0dp"
+                app:layout_widthPercent="75%w"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="我的城市下雨了,但是你不在，你的世界"
+                android:textColor="@color/text_common"
+                app:layout_textSizePercent="4%w"
+                android:layout_alignLeft="@+id/friend_user_name"
+                android:layout_below="@+id/friend_user_name"
+                app:layout_marginTopPercent="2%w"
+                android:lineSpacingExtra="2dp"
+
+                />
+            <ImageView
+                android:id="@+id/friend_xinqing_tupian"
+                android:layout_width="0dp"
+                app:layout_widthPercent="30%w"
+                android:layout_height="0dp"
+                app:layout_heightPercent="40%w"
+                app:layout_marginTopPercent="2%w"
+                android:layout_below="@+id/friend_user_xinqing"
+                android:layout_alignLeft="@+id/friend_user_xinqing"
+                android:scaleType="center"
+                android:src="@drawable/roundback"/>
+            <ImageView
+                android:id="@+id/friend_more"
+                android:layout_width="0dp"
+                app:layout_widthPercent="11%w"
+                android:layout_height="0dp"
+                app:layout_heightPercent="10%w"
+                android:scaleType="fitXY"
+                android:layout_below="@+id/friend_xinqing_tupian"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:padding="7dp"
+                android:src="@drawable/shezhi"/>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/friend_more_linear"
+                android:layout_width="180dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="9%w"
+                android:layout_below="@+id/friend_xinqing_tupian"
+                android:layout_alignTop="@+id/friend_more"
+                android:layout_toLeftOf="@+id/friend_more"
+                android:background="@color/colorNavLine"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/friend_zan_tupian"
+                    android:layout_width="0dp"
+                    app:layout_widthPercent="10%w"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="10%w"
+                    android:scaleType="fitXY"
+                    app:layout_marginLeftPercent="4%w"
+                    android:src="@drawable/ic_favorite_yes"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/friend_dianzan"
+                    android:layout_width="0dp"
+                    app:layout_widthPercent="25%w"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="赞:"
+                    android:textColor="@color/text_common"
+                    app:layout_textSizePercent="7%w"
+                    app:layout_marginLeftPercent="2%w"
+                    app:layout_paddingLeftPercent="1%w"
+                    android:layout_gravity="center_vertical"
+
+                    />
+                <ImageView
+                    android:id="@+id/friend_pinglun_tupian"
+                    android:layout_width="0dp"
+                    app:layout_widthPercent="15%w"
+                    android:layout_height="0dp"
+                    app:layout_heightPercent="15%w"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/recommand"/>
+                <TextView
+                    android:id="@+id/friend_pinglun"
+                    android:layout_width="0dp"
+                    app:layout_widthPercent="28%w"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="评论:"
+                    android:textColor="@color/text_common"
+                    app:layout_textSizePercent="7%w"
+                    app:layout_paddingLeftPercent="1%w"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:id="@+id/friend_recommand_list"
+                android:layout_width="0dp"
+                app:layout_widthPercent="78%"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/friend_more"
+                android:layout_alignLeft="@+id/friend_xinqing_tupian"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorNavLine"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/friend_zan_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/tabBackground"
+                    android:textSize="11sp"
+                    app:layout_paddingPercent="2%"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+
+
+                    />
+                <TextView
+                    android:id="@+id/recommand_text_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/text_common"
+
+                    android:layout_marginTop="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="4dp"
+                    android:lineSpacingExtra="3dp"
+                    android:visibility="gone"
+                    android:textSize="12sp"/>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

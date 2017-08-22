@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+       android:id="@+id/zhihu_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="24%h"
+        android:scaleType="fitXY"
+        android:src="@drawable/headback"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/text_common"/>
+
+   <com.zhy.android.percent.support.PercentRelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:layout_heightPercent="15%h"
+
+       >
+       <!--50%h是占上级容器的比例-->
+       <Button
+           android:id="@+id/tucao"
+           android:layout_width="0dp"
+           app:layout_widthPercent="12%w"
+           android:layout_height="0dp"
+           app:layout_heightPercent="12%w"
+           android:background="@drawable/redcircle"
+           android:layout_centerInParent="true"
+           android:textColor="@color/colorTheme"
+           android:text="吐槽"
+           app:layout_textSizePercent="20%h"
+
+           />
+       <Button
+           android:id="@+id/dawu"
+           android:layout_width="0dp"
+           app:layout_widthPercent="12%w"
+           android:layout_height="0dp"
+           app:layout_heightPercent="12%w"
+           android:background="@drawable/redcircle"
+           android:layout_centerVertical="true"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="0dp"
+           app:layout_marginLeftPercent="30%h"
+           android:textColor="@color/colorTheme"
+           android:text="大误"
+           app:layout_textSizePercent="20%h"/>
+
+       <Button
+           android:id="@+id/suiwen"
+           android:layout_width="0dp"
+           app:layout_widthPercent="12%w"
+           android:layout_height="0dp"
+           app:layout_heightPercent="12%w"
+           android:background="@drawable/redcircle"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="0dp"
+           app:layout_marginRightPercent="30%h"
+           android:textColor="@color/colorTheme"
+           android:text="随文"
+           app:layout_textSizePercent="20%h"
+           />
+
+
+
+
+   </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/text_common"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="6%h"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            app:layout_widthPercent="8%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:src="@drawable/recommand"
+            android:layout_gravity="center_vertical"
+            app:layout_marginLeftPercent="2%w"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:text="推荐"
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="4%w"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="27%h"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w">
+        <ImageView
+            android:id="@+id/middle_recommand"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="28%w"
+            android:src="@drawable/roundback"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"/>
+
+
+        <ImageView
+            android:id="@+id/left_recommand"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="28%w"
+            android:src="@drawable/roundback"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageView
+            android:id="@+id/right_recommand"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="28%w"
+            android:src="@drawable/roundback"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/middle_text"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="3%w"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/middle_recommand"/>
+        <TextView
+            android:id="@+id/left_text"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="3%w"
+            android:layout_alignLeft="@+id/left_recommand"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_below="@+id/left_recommand"/>
+        <TextView
+            android:id="@+id/right_text"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            android:layout_below="@+id/right_recommand"
+            android:layout_alignLeft="@+id/right_recommand"
+            android:gravity="center_vertical"
+            android:layout_marginTop="3dp"
+            android:text=""
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="3%w"
+            android:maxLines="2"
+            android:ellipsize="end"
+          />
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="36%w"
+        app:layout_marginTopPercent="1%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/bottom_recommand"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_heightPercent="30%w"
+            android:src="@drawable/earth"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/bottom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_common"
+            android:layout_gravity="center_vertical"
+            android:text=""
+            app:layout_textSizePercent="3%w"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            app:layout_marginTopPercent="3%w"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

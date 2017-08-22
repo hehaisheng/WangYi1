@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--一开始linear设置的大小是全局，所以只能显示一个-->
+    <TextView
+        android:id="@+id/test_text2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="显示数据"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/login">
+    <EditText
+        android:id="@+id/find_accountEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="账号:"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:padding="6dp"
+        app:layout_marginTopPercent="25%h"
+        android:background="@color/colorLine"
+        android:maxLength="4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/find_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <EditText
+        android:id="@+id/find_passEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="密码:"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_marginTop="12dp"
+        android:maxLength="7"
+        android:digits="1234567890"
+        android:background="@color/colorLine"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+    <TextView
+        android:id="@+id/find_linear2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorWhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+    <TextView
+        android:id="@+id/find_clickText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置新账号密码"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorTheme"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/love_comcomplay_gedan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="6%h"
+        android:textColor="@color/colorWhite"
+        android:paddingTop="6dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@color/colorTheme"
+        android:text="歌单"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/love_activity_musiclist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:layout_below="@+id/love_comcomplay_gedan">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

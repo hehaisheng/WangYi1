@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <TextView
+        android:id="@+id/talk_music_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7%h"
+        android:textColor="@color/colorWhite"
+        android:text="我的天空"
+        android:textSize="15sp"
+        android:gravity="left|center_vertical"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorTheme"
+        android:paddingLeft="3dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/talk_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="90%h"
+        android:layout_below="@+id/talk_music_name">
+
+    </android.support.v7.widget.RecyclerView>
+   <com.zhy.android.percent.support.PercentLinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_marginLeft="3dp"
+       android:layout_marginRight="3dp"
+       android:orientation="horizontal">
+       <EditText
+           android:id="@+id/talk_edit"
+           android:layout_width="0dp"
+           app:layout_widthPercent="80%w"
+           android:layout_height="wrap_content"
+           android:hint="乐读："
+           android:textColor="@color/colorWhite"
+           android:textColorHint="@color/colorWhite"
+           android:paddingLeft="10dp"
+           android:layout_gravity="center_vertical"
+           android:gravity="center_vertical"
+           android:textSize="20sp"
+           android:background="@drawable/shape_back"
+           />
+       <TextView
+           android:id="@+id/talk_send"
+           android:layout_width="0dp"
+           app:layout_widthPercent="19%w"
+           app:layout_marginLeftPercent="1%w"
+           android:layout_height="match_parent"
+           android:layout_gravity="bottom|right"
+           android:text="发送"
+           android:textColor="@color/colorWhite"
+           android:textSize="20sp"
+           android:background="@drawable/shape_back"
+           android:gravity="center"/>
+
+
+   </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

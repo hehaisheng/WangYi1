@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/music_play_relativeLayout1"
+    android:background="@color/textColorPrimary">
+    <TextView
+        android:id="@+id/music_play_text1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%w"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="我的天空"
+        android:background="@color/colorTheme"
+        app:layout_textSizePercent="5%w"
+        android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:id="@+id/music_play_imageView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="42%h"
+            app:layout_widthPercent="42%h"
+            app:layout_marginTopPercent="9%h"
+            android:src="@drawable/default_record_album"
+            android:layout_below="@+id/music_play_text1"
+            android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/music_play_talk"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_widthPercent="8%w"
+        android:src="@drawable/shezhi"
+        android:scaleType="fitXY"
+        app:layout_marginRightPercent="20%w"
+        android:layout_alignTop="@+id/play_down"
+        android:layout_toLeftOf="@+id/play_down"
+      />
+    <ImageView
+        android:id="@+id/play_down"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_widthPercent="7%w"
+        android:src="@drawable/downicon"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/music_play_imageView1"
+        app:layout_marginTopPercent="10%h"
+       />
+    <ImageView
+        android:id="@+id/play_list_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_widthPercent="8%w"
+        android:layout_alignTop="@+id/play_down"
+        android:layout_toRightOf="@+id/play_down"
+        app:layout_marginLeftPercent="20%w"
+        android:src="@drawable/down"/>
+
+    <SeekBar
+        android:id="@+id/play_seek"
+        android:layout_width="0dp"
+        app:layout_widthPercent="76%w"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Holo.SeekBar"
+        app:layout_marginTopPercent="5%h"
+        android:layout_below="@+id/play_down"/>
+    <TextView
+        android:id="@+id/play_tiem_start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="10%w"
+        app:layout_heightPercent="6%h"
+        android:layout_toLeftOf="@+id/play_seek"
+        android:layout_alignTop="@+id/play_seek"
+        android:text="0:00"
+        android:gravity="center"
+        app:layout_textSizePercent="3%w"
+        android:textColor="@color/colorWhite"
+       />
+    <TextView
+        android:id="@+id/play_tiem_end"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_widthPercent="10%w"
+        app:layout_heightPercent="6%h"
+        android:layout_toRightOf="@+id/play_seek"
+        android:layout_alignTop="@+id/play_seek"
+        android:text="4:40"
+        android:gravity="center"
+        app:layout_textSizePercent="3%w"
+        android:textColor="@color/colorWhite"
+        />
+
+
+
+
+
+
+
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/music_play_linear1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="14%h"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        
+        >
+        <ImageView
+            android:id="@+id/music_play_imageView2"
+            android:layout_width="0dp"
+            app:layout_widthPercent="18%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_play_mode_list"/>
+        <ImageView
+            android:id="@+id/music_play_imageView3"
+            android:layout_width="0dp"
+            app:layout_widthPercent="20%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_play_last"/>
+        <ImageView
+            android:id="@+id/music_play_imageView4"
+            android:layout_width="0dp"
+            app:layout_widthPercent="20%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="12%w"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_pause"/>
+        <ImageView
+            android:id="@+id/music_play_imageView5"
+            android:layout_width="0dp"
+            app:layout_widthPercent="20%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="10%w"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_play_next"/>
+        <ImageView
+            android:id="@+id/music_play_imageView6"
+            android:layout_width="0dp"
+            app:layout_widthPercent="20%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_favorite_yes"/>
+        
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/music_play_more_list"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40%h"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@color/newback">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

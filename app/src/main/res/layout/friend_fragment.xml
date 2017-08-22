@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+   <com.example.pc_.wangyi.view.MyHorizontalScrollView
+       android:id="@+id/myhorscrview"
+       android:layout_width="match_parent"
+       android:layout_height="120dp">
+
+
+   </com.example.pc_.wangyi.view.MyHorizontalScrollView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--app:layout_heightPercent="25%h"-->
+        <!--android:background="@drawable/headback">-->
+    <!--</LinearLayout>-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="18%h"
+
+        >
+        <!--50%h是占上级容器的比例-->
+        <Button
+            android:id="@+id/friend_xiaoqi"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%h"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%h"
+            android:background="@drawable/redcircle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTheme"
+            android:text="小憩"
+            app:layout_textSizePercent="20%h"
+
+            />
+        <Button
+            android:id="@+id/friend_lishi"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%h"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%h"
+            android:background="@drawable/redcircle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            app:layout_marginLeftPercent="30%h"
+            android:textColor="@color/colorTheme"
+            android:text="历史"
+            app:layout_textSizePercent="20%h"/>
+
+        <Button
+            android:id="@+id/friend_down"
+            android:layout_width="0dp"
+            app:layout_widthPercent="50%h"
+            android:layout_height="0dp"
+            app:layout_heightPercent="50%h"
+            android:background="@drawable/redcircle"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="30%h"
+            android:textColor="@color/colorTheme"
+            android:text="下载"
+            app:layout_textSizePercent="20%h"
+            />
+
+
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/newback"/>
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="12%h"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            app:layout_widthPercent="8%w"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:src="@drawable/shezhi"
+            android:layout_gravity="center_vertical"
+            app:layout_marginLeftPercent="2%w"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            android:text="设置"
+            android:textColor="@color/text_common"
+            app:layout_textSizePercent="4%w"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            />
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+    <TextView
+        android:id="@+id/friend_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       android:background="@color/newback"/>
+    <Button
+        android:id="@+id/friend_circle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%w"
+        android:background="@drawable/friend_back"
+        app:layout_marginTopPercent="12%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:text="朋友圈"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/text_common"/>
+    <Button
+        android:id="@+id/friend_about"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%w"
+        android:background="@drawable/friend_back"
+        app:layout_marginTopPercent="8%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:text="关于"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/text_common"/>
+    <Button
+        android:id="@+id/friend_unLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%w"
+        android:background="@drawable/friend_back"
+        app:layout_marginTopPercent="8%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:text="退出账号"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/text_common"/>
+
+    <Button
+        android:id="@+id/friend_imageLoader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="9%w"
+        android:background="@drawable/friend_back"
+        app:layout_marginTopPercent="8%w"
+        app:layout_marginLeftPercent="2%w"
+        app:layout_marginRightPercent="2%w"
+        android:gravity="center"
+        android:text="图片加载"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/text_common"/>
+
+
+
+
+
+
+</com.zhy.android.percent.support.PercentLinearLayout>
+

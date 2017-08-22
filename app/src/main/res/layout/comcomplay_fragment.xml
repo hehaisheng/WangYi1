@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/comcom_layout"
+    android:layout_alignParentBottom="true"
+    android:background="@color/newback">
+    <ImageView
+        android:id="@+id/comcomplay_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%w"
+        app:layout_widthPercent="9%w"
+        style="@style/MyImageStyle"
+        android:src="@drawable/roundback"
+        app:layout_marginLeftPercent="3%w"
+        />
+    <TextView
+        android:id="@+id/comcomplay_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comcomplay_image"
+        app:layout_marginTopPercent="3%w"
+        app:layout_marginLeftPercent="3%w"
+        android:text="我的天空"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/text_common"/>
+    <TextView
+        android:id="@+id/comcomplay_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comcomplay_name"
+        android:layout_toRightOf="@+id/comcomplay_image"
+        app:layout_marginLeftPercent="3%w"
+        android:text="南征北战"
+        app:layout_marginTopPercent="1%w"
+        app:layout_textSizePercent="3%w"
+        android:textColor="@color/text_common"/>
+    <ImageView
+        android:id="@+id/comcomplay_play"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%w"
+        app:layout_widthPercent="8%w"
+        android:src="@drawable/about"
+        style="@style/MyImageStyle"
+        android:layout_alignParentRight="true"
+        app:layout_marginRightPercent="4%w"
+        />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

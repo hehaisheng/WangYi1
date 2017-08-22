@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:background="@color/colorLineItem"
+   >
+    <TextView
+        android:id="@+id/dialog_content"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:textColor="@color/text_common"
+        android:text="是否去连接网络"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+
+
+        />
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="0.1dp"
+        android:background="@color/colorTheme"/>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/splash_queren"
+            android:layout_width="123dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_common"
+            android:text="确认"
+            android:textSize="16sp"
+            android:gravity="center"
+
+            />
+        <TextView
+            android:layout_width="0.1dp"
+            android:layout_height="32dp"
+            android:background="@color/colorTheme"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:id="@+id/splash_quxiao"
+            android:layout_width="123dp"
+            android:layout_height="40dp"
+            android:textColor="@color/text_common"
+            android:text="取消"
+            android:textSize="16sp"
+            android:gravity="center"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/friend_create_title"
+        android:layout_width="0dp"
+        app:layout_widthPercent="75%w"
+        android:layout_height="wrap_content"
+        android:text="好音为你"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorTheme"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/friend_send_click"
+        android:layout_width="0dp"
+        app:layout_widthPercent="25%w"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorTheme"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/friend_create_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="乐读："
+        android:textColorHint="@color/tabBackground"
+        android:textColor="@color/text_common"
+        android:layout_below="@+id/friend_create_title"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="3dp"
+        android:background="@drawable/create_back"
+
+        />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

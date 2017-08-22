@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/newback"
+    >
+    <TextView
+        android:id="@+id/find_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="2%w"
+        app:layout_marginLeftPercent="3%w"
+        android:text="@string/musicname"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/find_item_art"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/find_item_name"
+        app:layout_marginTopPercent="1%w"
+        app:layout_marginLeftPercent="3%w"
+        android:text="@string/musicart"
+        app:layout_textSizePercent="3%w"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:id="@+id/find_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/find_item_art"
+        android:layout_alignTop="@+id/find_item_art"
+        app:layout_marginLeftPercent="3%w"
+        android:text=""
+        app:layout_textSizePercent="3%w"
+        android:textColor="@color/colorWhite"/>
+    <ImageView
+        android:id="@+id/find_item_more"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="6%w"
+        app:layout_widthPercent="8%w"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:layout_marginRightPercent="4%w"
+        android:src="@drawable/more"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_066"
+        android:background="@color/colorHomeLine"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

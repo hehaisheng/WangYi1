@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <TextView
+        android:id="@+id/net_music"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="7%h"
+        android:background="@color/colorTheme"
+        android:gravity="left|center_vertical"
+        android:text="在线好歌"
+        android:layout_alignParentTop="true"
+        app:layout_paddingLeftPercent="2%w"
+        app:layout_textSizePercent="4%w"
+        android:textColor="@color/colorWhite"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/net_recycle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="93%h"
+        android:divider="@null"
+        android:layout_below="@+id/net_music">
+
+    </android.support.v7.widget.RecyclerView>
+    <RelativeLayout
+        android:id="@+id/net_relative"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="6%h"
+        android:background="@color/newback"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/net_baocun"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/star"
+            android:layout_marginTop="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/net_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/colorWhite"
+            android:text="添加到下载"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignTop="@+id/net_baocun"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/net_baocun"/>
+
+
+    </RelativeLayout>
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

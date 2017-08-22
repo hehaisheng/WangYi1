@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/newback"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/zhihu_content_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%h"
+        android:background="@color/colorTheme" >
+        <TextView
+            android:id="@+id/zhihu_content_title"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="8%w"
+            app:layout_widthPercent="15%w"
+            android:text="悦读"
+            android:layout_centerVertical="true"
+            app:layout_marginLeftPercent="4%w"
+            app:layout_textSizePercent="5%w"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:id="@+id/zhihu_content_more"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="7%w"
+            app:layout_widthPercent="10%w"
+            android:src="@drawable/more"
+            android:scaleType="fitXY"
+           android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="4%w"
+            app:layout_textSizePercent="6%w"
+            android:textColor="@color/text_common"/>
+
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <WebView
+            android:id="@+id/zhihu_webview"
+            android:layout_below="@+id/zhihu_content_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/zhihu_content_linear"
+          android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          android:background="@color/newback"
+          android:layout_height="100dp"
+          android:visibility="gone">
+          <ImageView
+              android:id="@+id/down_baocun"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/star"
+              android:layout_marginTop="15dp"
+              android:layout_marginLeft="15dp"/>
+          <TextView
+              android:id="@+id/baocun_text"
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:textColor="@color/colorWhite"
+              android:text="添加到下载"
+              android:textSize="15sp"
+              android:layout_marginLeft="20dp"
+              android:layout_alignTop="@+id/down_baocun"
+              android:gravity="center_vertical"
+              android:layout_toRightOf="@+id/down_baocun"/>
+          <ImageView
+              android:id="@+id/down_link"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:src="@drawable/share"
+              android:layout_below="@+id/down_baocun"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="15dp"/>
+          <TextView
+              android:id="@+id/link_text"
+              android:layout_width="match_parent"
+              android:layout_height="25dp"
+              android:textColor="@color/colorWhite"
+              android:text="复制分享链接"
+              android:textSize="15sp"
+              android:layout_marginLeft="20dp"
+              android:layout_alignTop="@+id/down_link"
+              android:gravity="center_vertical"
+              android:layout_toRightOf="@+id/down_link"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

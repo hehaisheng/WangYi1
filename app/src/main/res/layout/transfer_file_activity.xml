@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="8%h"
+        android:background="@color/colorTheme"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/transfer_mb"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="wrap_content"
+            android:text="总100M"
+            android:textColor="@color/colorWhite"
+            android:maxLength="4"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/transfer_sudu"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="4%w"
+            android:text="3m/s"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/transfer_alltime"
+            android:layout_width="0dp"
+            app:layout_widthPercent="30%w"
+            android:layout_height="wrap_content"
+            app:layout_marginLeftPercent="3%w"
+            android:text="1s"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/transfer_file_recyc"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       app:layout_heightPercent="92%h">
+
+   </android.support.v7.widget.RecyclerView>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
